@@ -1,0 +1,8 @@
+/* grid template columns: 1f 1fr;
+grid template rows 1.5f repeat(4,1fr) 1.5fr;
+grid template area: 
+"header header"
+"section2 section1"
+"section2"
+"section3"
+"section4"
