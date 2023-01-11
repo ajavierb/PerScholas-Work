@@ -15,17 +15,23 @@ maiinEl.classList.add('flex-ctr');
 let topMenuEl = document.getElementById('top-menu');
 topMenuEl.style.height = '100%';
 topMenuEl.style.backgroundColor = '--top-menu-bg';
-topMenuEl.classList.add('flex-around')
+topMenuEl.classList.add('flex-around');
+
+let link = "link"<a href:  src= "link" /a> ///***could work but seems to be missing something???///
+
+//const link = document.createElement('link');
 
 //create an a element and add an href attribute with value set to href property of "link" object
 
-let i= document.createElement ('a')
-<a href = "link"></a>
-
-document.topMenuEl.appendChild(a)
+//link.setAttribute("link");
 
 
-//i do not see a link object. 
+
+//let i= document.createElement ('a')
+//document.topMenuEl.appendChild(a)
+
+
+//////////////////////////////////i did not see a link object so I created one.//////////////////////////////////
 
 
 
