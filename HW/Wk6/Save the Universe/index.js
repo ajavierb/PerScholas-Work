@@ -45,7 +45,7 @@ class MainShip extends Ship {
 
         }
         else { window.alert('You missed!') }
-        target.attackAlien(this) /// now no background but 'attacks' working ///
+        target.attackAlien(this) /// if you comment this out the background comes up after 2 button clicks ///
        }
  }
 

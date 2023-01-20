@@ -1,10 +1,12 @@
 body {
-  background: grey url(images/space2.jpg);
+  background: url(images/space2.jpg);
+  position: fixed;
  
-  
 }
 .Ship{
     background: url(images/spaceship.png);
 }
-
+.fleet {
+  background: url(images/spaceship.png);
+}
 
