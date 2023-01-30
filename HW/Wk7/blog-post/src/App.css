@@ -1,0 +1,64 @@
+body{
+    
+  min-height: 100vh;
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  border-left: 5px solid lightgray;
+
+}
+
+h1{
+  color: tomato;
+  
+  
+}
+
+
+
+.tbd{
+  /* continues... */
+  color: tomato;
+  text-align: right;
+  
+}
+.h3s {
+  color: grey;
+}
+
+.pics{
+  width: 100%;
+}
+
+  
+p::first-letter {
+  color: lightgray;
+  border-radius: 2px;
+  font-size: 350%;
+  margin-right: 2px;
+  float: left;
+}
+
+li {
+  display: inline;
+  font-size: 30px;
+  
+}
+Copyrights{
+  color: lightgray;
+}
+main{
+ 
+  width: 1000px;
+ 
+}
+footer{
+  
+
+}
+nav{
+ 
+}
+header {
+  width: 1000px;
+}
