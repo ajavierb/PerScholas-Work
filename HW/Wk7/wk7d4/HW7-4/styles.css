@@ -1,0 +1,57 @@
+.body{
+    /* cannot seem to get this border to work! */
+    border-left-style: solid;   
+    min-height: 100vh;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: auto; 
+
+}
+
+h1{
+    color: tomato;
+}
+
+.menu {
+    /* this covers both menus, had some issues centering them */
+    display: inline-block;
+    text-align: center;
+  }
+
+.tbd{
+    /* continues... */
+    color: tomato;
+    text-align: right;
+}
+.h3s {
+    color: grey;
+}
+
+.pics{
+    width: 100%;
+}
+.hmf{
+    /* header main footer  */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+  
+  p::first-letter {
+    color: lightgray;
+    border-radius: 2px;
+    font-size: 350%;
+    margin-right: 2px;
+    float: left;
+  }
+
+  li {
+    display: inline;
+    font-size: 30px;
+    
+}
+.Copyrights{
+    color: lightgray;
+}

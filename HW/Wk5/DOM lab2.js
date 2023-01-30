@@ -30,5 +30,5 @@ document.topMenuEl.appendChild(a)
 let subMenuEl =document.getElementsByName('subMenuEl');
 subMenuEl.style.height = '100%';
 subMenuEl.style.backgroundColor = '--top-menu-bg';
-subMenuEl.classList.add('flex-around')
+subMenuEl.classList.add('flex-around');
 

@@ -8,7 +8,7 @@
     --top-menu-bg: #0e9aa7;
     --sub-menu-bg: #3da4ab;
   }
-  
+  /* had issues making it appear on the live server */
   body {
     font-family: Tahoma, Geneva, sans-serif;
     height: 100vh;
