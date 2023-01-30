@@ -15,7 +15,7 @@ maiinEl.classList.add('flex-ctr');
 let topMenuEl = document.getElementById('top-menu');
 topMenuEl.style.height = '100%';
 topMenuEl.style.backgroundColor = '--top-menu-bg';
-topMenuEl.classList.add('flex-around')
+topMenuEl.classList.add('flex-around');
 
 //create an a element and add an href attribute with value set to href property of "link" object
 

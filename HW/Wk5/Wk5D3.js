@@ -1,24 +1,48 @@
-function validAnagram(str1, str2) {
-    if(str1.length !== str2.length){
-    return false;
-    }
+let quotes = [
+    `I live my life a quarter mile at a time`,
+    `I said a ten-second car, not a ten-minute car`,
+    `You can have any brew you want... as long as it's a Corona.`,
+    `You almost had me? You never had me - you never had your car!`,
+    `I don't have friends. I have family.`,
+    `It don't matter if you win by an inch or a mile. Winning's winning.`
+  ];
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+    // Random quote of the day generator
+    const randomQuote = function() {
+      document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+    };
+    randomQuote();
     
-    
-    const counter1 = {};
-    const counter2 = {};
-    
-    for(let char of str1){
-        counter1[char] = counter1[char]+1 || 1
-    }
-    for(let char of str2){
-        counter2[char] = counter2[char]+1 || 1
-    }
-    for(let key in counter1){
-        if(!(key in counter2) || counter2[key] !== counter1[key]) {
-            return false;
-        }
-    }
-    return true;
-    
-    }
-     console.log(validAnagram('rail safety', 'fairy tales'))
+    // Do all of your work inside the document.addEventListener  
+  
+    // Part 1
+  
+  this.getElementById(#main-title);
+    // Part 2
+  
+  
+    // Part 3
+  
+  
+    // Part 4
+  
+  
+    // Part 5
+  
+  
+    // Part 6
+  
+  
+    // Part 7
+  
+  
+    // Part 8
+  
+  
+    // Part 9
+  
+  
+  
+  
+  });
