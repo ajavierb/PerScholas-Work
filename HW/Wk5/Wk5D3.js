@@ -18,7 +18,7 @@ let quotes = [
   
     // Part 1
   
-  this.getElementById(#main-title);
+  // this.getElementById(#main-title);
     // Part 2
   
   
