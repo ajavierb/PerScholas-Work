@@ -9,6 +9,7 @@ function App() {
 
 
 <div>
+    <Main.js />
 </div>
 
   //                  **********************    'search' removed from btwn + +
@@ -18,7 +19,12 @@ function App() {
 // )
 
 
-  async function getRecipes() {
+  //                  **********************    'search' removed from btwn + +
+  // var url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
+  //   Axios.get(
+  //     "https://api.edamam.com/api/recipes/v2?type=public&q=" + +"&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
+  // )
+  async () => {
     var result = await Axios.get();
     setrecipes(result.data.hits);
     console.log(result.data);
