@@ -2,16 +2,16 @@ import React from 'react'
 
 function main() {
 
-const apiGet = (){
-  fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// const apiGet = {
+//   fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 }
 
 
   return (
     <div>
-      
+
     </div>
   )
 }

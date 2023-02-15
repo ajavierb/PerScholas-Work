@@ -38,14 +38,13 @@
   background-color: slateblue;
   border: 2px solid #BFDB38;
   border-radius: 4px;
-  color: #SBFDB38;
+  color: #BFDB38;
   cursor: pointer;
 }
 .app_healthlabels{
-  padding 7px 8px;
+  padding: 7px 8px;
   margin-left: 5px;
   border-radius: 4px;
-  
 }
 
 
