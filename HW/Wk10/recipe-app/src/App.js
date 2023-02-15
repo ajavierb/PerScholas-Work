@@ -1,44 +1,30 @@
-import Axios from "axios";
+
 import { useState } from "react";
 import "./App.css";
-import Main from "main.js"
+import Main from "./main"
+import RecipeCard from "./RecipeCard";
+export default App;
+
 
 function App() {
   const [query, setquery] = useState("");
-  const [recipes, setrecipes] = useState([])
-
-
-<div>
-    <Main.js />
-</div>
-
+  const [recipes, setrecipes] = useState([]);
+  const [healthLabel, sethealthLabel] = useState(vegan);
   //                  **********************    'search' removed from btwn + +
-  // var url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
-//   Axios.get(
-//     "https://api.edamam.com/api/recipes/v2?type=public&q=" + +"&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
-// )
-
-
-  //                  **********************    'search' removed from btwn + +
-  // var url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
-  //   Axios.get(
-  //     "https://api.edamam.com/api/recipes/v2?type=public&q=" + +"&app_id=ca8a7842&app_key=8467fdd6590ea00b728798aacaf54866"
-  // )
-  async () => {
-    var result = await Axios.get();
-    setrecipes(result.data.hits);
-    console.log(result.data);
-  }
-
+  // async () => {
+  //   var result = await Axios.get();
+  //   setrecipes(result.data.hits);
+  //   console.log(result.data);
+  // }
 //  ******changing getRecipes to search was an idea...nothing happened
   const onSubmit = (e) => {
     e.preventDefault();
-    getRecipes();
-  }
+    setrecipes();
+  
   return (
     <div className ="app">
       <h1 > Ambar's Recipe Search 🍽️ </h1>
-      {/* ***searchbar next to txt */}
+      /* ***searchbar next to txt */
       <form className ="search_Bar" onSubmit={onSubmit}>
         <input
           type="text"
@@ -48,15 +34,24 @@ function App() {
           onChange={(e) => setquery(e.target.value)}
         />
         <input className="search_Submit" type="submit" value="Search" />
+
+        <select className="app_healthlabels">
+          <option onClick={() => sethealthLabel(vegan)}>Vegan</option>
+          <option onClick={() => sethealthLabel(vegetarian)}>Vegetarian</option>
+          <option onClick={() => sethealthLabel(pescetarian)}>pescetarian</option>
+          <option onClick={() => sethealthLabel(high-protein)}>High Protein</option>
+          <option onClick={() => sethealthLabel(low-sodium)}>low sodium</option>
+        </select>
       </form>
-      <div>
-        {recipes.map(recipe => {
-          return <p>{recipe["recipe"]["label"]}</p>
+      <div className="app_recipes">
+        {recipes.map((recipe) => {
+          return <RecipeCard recipe={recipe} />;
         })}
+      </div>
+      <div>
+        <Main />
       </div>
     </div>
   
 );
-}
-
-export default App;
+      }}
